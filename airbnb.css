@@ -139,26 +139,35 @@
 }
 .block4-1 {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #484848;
 }
-
+.block4-1 a {
+  color: #484848;
+}
+.block4-1 a:hover {
+  color: #484848;
+  text-decoration: none;
+}
 .block4-2 {
   display: flex;
 }
 .block4-2-1 a {
-  color: #484848 ;
+  color: #484848;
 }
 .block4-2-1 .fa {
   color: #008489;
 }
 .block5 {
   margin: auto;
+  font-size: 22px;
+  color: #484848;
 }
 .block5-1 {
   display: flex;
 }
-.block5-1 h3 {
-  font-size: 22px;
-}
+
 .block5-1 a {
   font-size: 15px;
   color: #484848;
