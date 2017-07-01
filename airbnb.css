@@ -7,8 +7,19 @@
   color: #484848;
   font-weight: bold;
 }
+.nav-one {
+  margin-top: 10px;
+}
 nav a {
   color: #565656;
+}
+.nav-left {
+  border: 1px solid #565656;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px;
+}
+.nav-left li {
+  padding: 0 20px;
 }
 .block1 {
   display: flex;
