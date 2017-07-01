@@ -15,231 +15,252 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    </style>
   <title>Airbnb</title>
 </head>
 
 <body>
-  <div class="span-12-of-12">
-<div class="section col span-12-of-12 menuNavTop">
-  <div class="section span-12-of-12">
-    <div class="span-12-of-12 block1">
-      <!-- BLOCK 1 -->
-      <img src="images/logo_airbnb.png" alt="logo airbnb">
-      <ul class="span-5-of-12 block1-1">
-        <li class="span-1-of-3">
-          <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="Partout" value="Partout"></input>
-        </li>
-        <li class="span-1-of-3">
-          <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Dates indifférentes</a>
-        </li>
-        <li class="span-1-of-3">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-users" aria-hidden="true"></i> 1 voyageur <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Adultes</a></li>
-              <li><a href="#">Enfants</a></li>
-              <li><a href="#">Bébés</a></li>
-              <li><a href="#">Annuler</a></li>
+  <nav class="navbar">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo_airbnb.png" alt="Logo Airbnb"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><i class="fa fa-search" aria-hidden="true"></i> Partout<span class="sr-only">(current)</span></a></li>
+            <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Dates indifférentes</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> 1 voyageur <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Adultes</a></li>
+                <li><a href="#">Enfants</a></li>
+                <li><a href="#">Bébés</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Annuler</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Devenez hôte</a></li>
+              <li><a href="#">Aide</a></li>
+              <li><a href="#">Inscription</a></li>
+              <li><a href="#">Connexion</a></li>
             </ul>
           </div>
-        </li>
-      </ul>
-      <ul class="span-5-of-12 block1-2">
-        <li class="span-1-of-4"><a href="#">Devenez hôte</a></li>
-        <li class="span-1-of-4"><a href="#">Aide</a></li>
-        <li class="span-1-of-4"><a href="#">Inscription</a></li>
-        <li class="span-1-of-4"><a href="#">Connexion</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="section col span-12-of-12 block2">
-    <div class="span-4-of-12 block2-1">
-      <ul class="span-6-of-6">
-        <li class="span-4-of-4"><a href="#">RECOMMANDÉ</a></li>
-        <li class="span-4-of-4"><a href="#">LOGEMENTS</a></li>
-        <li class="span-4-of-4"><a href="#">EXPÉRIENCES</a></li>
-        <li class="span-4-of-4"><a href="#">LIEUX</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="section span-12-of-12 block3">
-  <div class="span-10-of-12 block3-1">
-    <div class="block3-1-1">
-    <h3 class="span-1-of-10">Expériences</h3>
-    <a href="#" class="span-1-of-10">Plus ></a>
-  </div>
-    <div class="block3-2">
-      <div class="block3-2-1 col span-1-of-5">
-      <a href="#"><img src="images/1.jpg" alt="" class="span-5-of-5 image"></a>
-      <a href="#"><span id="price">41€</span> Rainbow inspired make up sesh in a neon junkyard <br> <i class="fa fa-star" aria-hidden="true"></i>
+      </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+  <nav class="navbar nav-blue">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">RECOMMANDÉ</a></li>
+          <li><a href="#">LOGEMENTS</a></li>
+          <li><a href="#">EXPÉRIENCES</a></li>
+          <li><a href="#">LIEUX</a></li>
+        </ul>
+  <div class="span-12-of-12">
+    <div class="section span-12-of-12 block3">
+      <div class="span-10-of-12 block3-1">
+        <div class="block3-1-1">
+          <h3 class="span-1-of-10">Expériences</h3>
+          <a href="#" class="span-1-of-10">Plus ></a>
+        </div>
+        <div class="block3-2">
+          <div class="block3-2-1 col span-1-of-5">
+            <a href="#"><img src="images/1.jpg" alt="" class="span-5-of-5 image"></a>
+            <a href="#"><span id="price">41€</span> Rainbow inspired make up sesh in a neon junkyard <br> <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
 3 commentaires</a>
-    </div>
-      <div class="block3-2-1 col span-1-of-5">
-      <a href="#"><img src="images/2.jpg" alt="" class="span-5-of-5 image"></a>
-      <a href="#"><span id="price">33€</span> Salvage food and Enjoy amazing home-style <br> <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="block3-2-1 col span-1-of-5">
+            <a href="#"><img src="images/2.jpg" alt="" class="span-5-of-5 image"></a>
+            <a href="#"><span id="price">33€</span> Salvage food and Enjoy amazing home-style <br> <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
 17 commentaires</a>
-    </div>
-      <div class="block3-2-1 col span-1-of-5">
-      <a href="#"><img src="images/3.jpg" alt="" class="span-5-of-5 image"></a>
-      <a href="#"><span id="price">99€</span> Découvrez tous les coins secrets de la Villa ... <br> <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="block3-2-1 col span-1-of-5">
+            <a href="#"><img src="images/3.jpg" alt="" class="span-5-of-5 image"></a>
+            <a href="#"><span id="price">99€</span> Découvrez tous les coins secrets de la Villa ... <br> <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
 16 commentaires</a>
+          </div>
+          <div class="block3-2-1 col span-1-of-5">
+            <a href="#"><img src="images/4.jpg" alt="" class="span-5-of-5 image"></a>
+            <a href="#"><span id="price">40€</span> Live and eat in Lisbon like local people do</a>
+          </div>
+          <div class="block3-2-1 col span-1-of-5">
+            <a href="#"><img src="images/5.jpg" alt="" class="span-5-of-5 image"></a>
+            <a href="#"><span id="price">34€</span> Go back in time with an archeologist</a>
+          </div>
+        </div>
+      </div>
     </div>
-      <div class="block3-2-1 col span-1-of-5">
-      <a href="#"><img src="images/4.jpg" alt="" class="span-5-of-5 image"></a>
-      <a href="#"><span id="price">40€</span> Live and eat in Lisbon like local people do</a>
-    </div>
-      <div class="block3-2-1 col span-1-of-5">
-      <a href="#"><img src="images/5.jpg" alt="" class="span-5-of-5 image"></a>
-      <a href="#"><span id="price">34€</span> Go back in time with an archeologist</a>
-    </div>
-    </div>
-  </div>
-</div>
-<div class="section span-12-of-12">
-  <div class="span-10-of-12 block4">
-  <div class="block4-1">
-    <h3 class="span-1-of-10">Logements</h3>
-    <a href="#" class="span-1-of-10">Plus ></a>
-  </div>
-    <div class="block4-2 span-3-of-3">
-    <div class="span-1-of-3 col block4-2-1">
-      <a href="#"><img src="images/6.jpg" alt="" class="span-3-of-3"></a>
-      <a href="#"><span id="price">62€ I SETTE CONI - TRULLO EDERA </span><br>Logement entier · 2 lits <br><i class="fa fa-star" aria-hidden="true"></i>
+    <div class="section span-12-of-12">
+      <div class="span-10-of-12 block4">
+        <div class="block4-1">
+          <h3 class="span-1-of-10">Logements</h3>
+          <a href="#" class="span-1-of-10">Plus ></a>
+        </div>
+        <div class="block4-2 span-3-of-3">
+          <div class="span-1-of-3 col block4-2-1">
+            <a href="#"><img src="images/6.jpg" alt="" class="span-3-of-3"></a>
+            <a href="#"><span id="price">62€ I SETTE CONI - TRULLO EDERA </span><br>Logement entier · 2 lits <br><i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
 85 commentaires</a>
-    </div>
-    <div class="span-1-of-3 col block4-2-1">
-      <a href="#"><img src="images/7.jpg" alt="" class="span-3-of-3"></a>
-      <a href="#"><span id="price">275€ The World Famous Seashell House ~</span> ... <br>Logement entier · 2 lits <br><i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="span-1-of-3 col block4-2-1">
+            <a href="#"><img src="images/7.jpg" alt="" class="span-3-of-3"></a>
+            <a href="#"><span id="price">275€ The World Famous Seashell House ~</span> ... <br>Logement entier · 2 lits <br><i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
 129 commentaires</a>
-    </div>
-    <div class="span-1-of-3 col block4-2-1">
-      <a href="#"><img src="images/8.jpg" alt="" class="span-3-of-3"></a>
-      <a href="#"><span id="price">335€ Secluded Intown Treehouse</span> <br>Logement entier · 1 lit <br><i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <div class="span-1-of-3 col block4-2-1">
+            <a href="#"><img src="images/8.jpg" alt="" class="span-3-of-3"></a>
+            <a href="#"><span id="price">335€ Secluded Intown Treehouse</span> <br>Logement entier · 1 lit <br><i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
         <i class="fa fa-star" aria-hidden="true"></i>
 236 commentaires</a>
-    </div>
-  </div>
-</div>
-</div>
-<div class="section span-12-of-12">
-  <div class="span-10-of-12 block5">
-  <h3>Destinations à la une</h3>
-    <div class="span-6-of-6 block5-1">
-      <div class="span-1-of-6 col">
-        <a href="#"><img src="images/los-angeles.jpg" alt="los-angeles" class="span-6-of-6"></a>
-        <a href="#">Los Angeles</a>
-      </div>
-      <div class="span-1-of-6 col">
-        <a href="#"><img src="images/london.jpg" alt="london" class="span-6-of-6"></a>
-        <a href="#">Londres</a>
-      </div>
-      <div class="span-1-of-6 col">
-        <a href="#"><img src="images/florence.jpg" alt="florence" class="span-6-of-6"></a>
-        <a href="#">Florence</a>
-      </div>
-      <div class="span-1-of-6 col">
-        <a href="#"><img src="images/tokyo.jpg" alt="tokyo" class="span-6-of-6"></a>
-        <a href="#">Tokyo</a>
-      </div>
-      <div class="span-1-of-6 col">
-        <a href="#"><img src="images/paris.jpg" alt="paris" class="span-6-of-6"></a>
-        <a href="#">Paris</a>
-      </div>
-      <div class="span-1-of-6 col">
-        <a href="#"><img src="images/san-francisco.jpg" alt="san-francisco" class="span-6-of-6"></a>
-        <a href="#">San Francisco</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="section span-12-of-12">
+      <div class="span-10-of-12 block5">
+        <h3>Destinations à la une</h3>
+        <div class="span-6-of-6 block5-1">
+          <div class="span-1-of-6 col">
+            <a href="#"><img src="images/los-angeles.jpg" alt="los-angeles" class="span-6-of-6"></a>
+            <a href="#">Los Angeles</a>
+          </div>
+          <div class="span-1-of-6 col">
+            <a href="#"><img src="images/london.jpg" alt="london" class="span-6-of-6"></a>
+            <a href="#">Londres</a>
+          </div>
+          <div class="span-1-of-6 col">
+            <a href="#"><img src="images/florence.jpg" alt="florence" class="span-6-of-6"></a>
+            <a href="#">Florence</a>
+          </div>
+          <div class="span-1-of-6 col">
+            <a href="#"><img src="images/tokyo.jpg" alt="tokyo" class="span-6-of-6"></a>
+            <a href="#">Tokyo</a>
+          </div>
+          <div class="span-1-of-6 col">
+            <a href="#"><img src="images/paris.jpg" alt="paris" class="span-6-of-6"></a>
+            <a href="#">Paris</a>
+          </div>
+          <div class="span-1-of-6 col">
+            <a href="#"><img src="images/san-francisco.jpg" alt="san-francisco" class="span-6-of-6"></a>
+            <a href="#">San Francisco</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<footer class="span-12-of-12">
-  <div class="span-10-of-12 footer1">
-    <ul class="span-1-of-4 col">
-      <div class="dropdown" style="margin-bottom: 7%">
-        <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Français <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">English</a></li>
-          <li><a href="#">Español</a></li>
-          <li><a href="#">中国</a></li>
-          <li><a href="#">српски</a></li>
-          <li><a href="#">தமிழ்</a></li>
+    <footer class="span-12-of-12">
+      <div class="span-10-of-12 footer1">
+        <ul class="span-1-of-4 col">
+          <div class="dropdown" style="margin-bottom: 7%">
+            <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Français <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Español</a></li>
+              <li><a href="#">中国</a></li>
+              <li><a href="#">српски</a></li>
+              <li><a href="#">தமிழ்</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">EUR <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">USD</a></li>
+              <li><a href="#">RON</a></li>
+              <li><a href="#">MAD</a></li>
+              <li><a href="#">ALG</a></li>
+            </ul>
+          </div>
+        </ul>
+        <ul class="span-1-of-4 col">
+          <li>
+            <p id="price">Airbnb</p>
+          </li>
+          <li><a href="#">À propos d'Airbnb</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Règles</a></li>
+          <li><a href="#">Aide</a></li>
+          <li><a href="#">Diversité et <br>intégration</a></li>
+        </ul>
+        <ul class="span-1-of-4 col">
+          <li>
+            <p id="price">Découvrir</p>
+          </li>
+          <li><a href="#">Confiance et sécurité</a></li>
+          <li><a href="#">Crédit voyage</a></li>
+          <li><a href="#">Airbnb Citizen</a></li>
+          <li><a href="#">Voyages d'affaires</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Airbnbmag</a></li>
+        </ul>
+        <ul class="span-1-of-4 col">
+          <li>
+            <p id="price">Hébergement</p>
+          </li>
+          <li><a href="#">Pourquoi être hôte</a></li>
+          <li><a href="#">Hospitalité</a></li>
+          <li><a href="#">Hébergement <br>responsable</a></li>
+          <li><a href="#">Community Center</a></li>
         </ul>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown">EUR <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">USD</a></li>
-          <li><a href="#">RON</a></li>
-          <li><a href="#">MAD</a></li>
-          <li><a href="#">ALG</a></li>
+      <div class="span-10-of-12 footer2">
+        <p class="span-6-of-12"><img src="images/logo_airbnb_footer.png" alt="logo airbnb">© Airbnb, Inc.</p>
+        <ul class="span-6-of-12 footer2-1">
+          <li class="span-6-of-6 col"><a href="#">Conditions</a></li>
+          <li class="span-6-of-6 col"><a href="#">Politique de confidentialité</a></li>
+          <li class="span-6-of-6 col"><a href="#">Plan du site</a></li>
+          <li class="span-6-of-6 col"><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+          <li class="span-6-of-6 col"><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i>
+          </li>
+          <li class="span-6-of-6 col"><a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></a></i>
+          </li>
         </ul>
       </div>
-    </ul>
-    <ul class="span-1-of-4 col">
-      <li><p id="price">Airbnb</p></li>
-      <li><a href="#">À propos d'Airbnb</a></li>
-      <li><a href="#">Carrières</a></li>
-      <li><a href="#">Presse</a></li>
-      <li><a href="#">Règles</a></li>
-      <li><a href="#">Aide</a></li>
-      <li><a href="#">Diversité et <br>intégration</a></li>
-    </ul>
-    <ul class="span-1-of-4 col">
-      <li><p id="price">Découvrir</p></li>
-      <li><a href="#">Confiance et sécurité</a></li>
-      <li><a href="#">Crédit voyage</a></li>
-      <li><a href="#">Airbnb Citizen</a></li>
-      <li><a href="#">Voyages d'affaires</a></li>
-      <li><a href="#">Guides</a></li>
-      <li><a href="#">Airbnbmag</a></li>
-    </ul>
-    <ul class="span-1-of-4 col">
-      <li><p id="price">Hébergement</p></li>
-      <li><a href="#">Pourquoi être hôte</a></li>
-      <li><a href="#">Hospitalité</a></li>
-      <li><a href="#">Hébergement <br>responsable</a></li>
-      <li><a href="#">Community Center</a></li>
-    </ul>
+    </footer>
   </div>
-  <div class="span-10-of-12 footer2">
-    <p class="span-6-of-12"><img src="images/logo_airbnb_footer.png" alt="logo airbnb">© Airbnb, Inc.</p>
-    <ul class="span-6-of-12 footer2-1">
-      <li class="span-6-of-6 col"><a href="#">Conditions</a></li>
-      <li class="span-6-of-6 col"><a href="#">Politique de confidentialité</a></li>
-      <li class="span-6-of-6 col"><a href="#">Plan du site</a></li>
-      <li class="span-6-of-6 col"><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-      <li class="span-6-of-6 col"><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></a></i></li>
-      <li class="span-6-of-6 col"><a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></a></i></li>
-    </ul>
-  </div>
-</footer>
-</div>
 </body>
 
 </html>

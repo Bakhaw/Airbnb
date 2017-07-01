@@ -1,18 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #fff;
   font-family: 'Droid Sans', sans-serif;
 }
 #price {
   color: #484848;
   font-weight: bold;
 }
-.menuNavTop {
-  border-bottom: 1px solid #DBDBDB;
-  box-shadow: 1px 1px 3px #888888;
+nav a {
+  color: #565656;
 }
-
 .block1 {
   display: flex;
   align-items: center;
@@ -200,6 +197,8 @@ footer {
 .footer1 .btn {
   color: #767676;
   border: 2px solid #767676;
+  background-color: #fff;
+
 }
 .footer2 {
   display: flex;
