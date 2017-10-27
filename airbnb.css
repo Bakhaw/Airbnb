@@ -15,11 +15,26 @@ nav a {
 }
 .nav-left {
   border: 1px solid #565656;
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: 2px 2px 2px;
 }
 .nav-left li {
   padding: 0 20px;
+}
+.navbar-toggle {
+  border: 1px solid #565656;
+}
+.navbar-toggle .icon-bar {
+  background-color: #FF5A5F;
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: #fff;
+  color: #008489;
+}
+#search,
+#calendar {
+  border-right: 1px solid #565656;
 }
 .block1 {
   display: flex;
@@ -207,6 +222,7 @@ footer {
 
 .footer1 .btn {
   color: #767676;
+  border-radius: 0;
   border: 2px solid #767676;
   background-color: #fff;
 
